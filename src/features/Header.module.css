@@ -1,0 +1,19 @@
+.header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 3rem;
+  color: #68a691;
+}
+
+.logo {
+  height: 50px;
+}
