@@ -18,6 +18,9 @@ function Header() {
           <li className={styles.link}>
             <Link to="/contact">contact</Link>
           </li>
+          <li className={styles.link}>
+            <Link to="/creations">creations</Link>
+          </li>
         </ul>
       </nav>
     </header>

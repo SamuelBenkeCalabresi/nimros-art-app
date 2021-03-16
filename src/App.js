@@ -1,25 +1,38 @@
 import styles from "./App.module.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./features/Home";
 import About from "./features/About";
 import Contact from "./features/Contact";
 import Footer from "./features/Footer";
 import Header from "./features/Header";
+import GlobeDelimeter from "./features/GlobeDelimeter";
+import PostsContainer from "./features/PostsContainer";
+import Creations from "./features/Creations";
 
 function App() {
   return (
     <Router>
       <div className={styles.appContainer}>
-        <Header />
         <Switch>
           <Route path="/about">
+            <Header />
             <About />
           </Route>
           <Route path="/contact">
+            <Header />
             <Contact />
           </Route>
+          <Route path="/creations">
+            <Header />
+            <Creations />
+          </Route>
           <Route path="/">
-            <Home />
+            <div className={styles.homeContainer}>
+              <Header />
+              <Home />
+              <GlobeDelimeter />
+            </div>
+            <PostsContainer />
           </Route>
         </Switch>
 

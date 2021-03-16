@@ -1,10 +1,11 @@
 .footer {
   width: 100%;
-  height: 80px;
-  /* border-top: 1px solid #68a691; */
+  height: 50px;
+  border-top: 1px solid #7ec7af;
   display: flex;
+  justify-items: center;
+  place-content: center;
   color: #68a691;
-  width: 80%;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -23,4 +24,8 @@
 
 .footerIcon {
   height: 1.5em;
+}
+
+.copyright {
+  font-size: 1rem;
 }

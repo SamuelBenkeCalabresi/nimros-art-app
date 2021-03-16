@@ -1,0 +1,8 @@
+.delimeter {
+  width: 80%;
+  height: 80px;
+  display: flex;
+  color: #68a691;
+  max-width: 1200px;
+  margin: 0 auto;
+}
