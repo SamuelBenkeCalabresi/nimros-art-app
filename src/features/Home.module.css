@@ -1,69 +1,38 @@
-.container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
+.homeContainer {
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .main {
-  padding: 5rem 0;
-  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
-
-/* .title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-  color: #68a691;
-}
-
-.pageTitle {
-  font-size: 1.5rem;
-}
-
-.title,
-.pageTitle,
-.description {
-  text-align: center;
-} */
 
 .description {
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  color: #ffffff;
 }
 
 .logo {
   height: 1em;
 }
 
-.socialNetworksContainer {
+.socialMediaContainer {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: left;
 }
 
 .socialIconLink + .socialIconLink {
-  padding-left: 50px;
+  padding-left: 5px;
 }
 
 .socialIcon {
-  /* color: #333333; */
   color: black;
   transition: color 0.15s ease;
 }
