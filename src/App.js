@@ -5,7 +5,6 @@ import About from "./features/About";
 import Contact from "./features/Contact";
 import Footer from "./features/Footer";
 import Header from "./features/Header";
-import GlobeDelimeter from "./features/GlobeDelimeter";
 import PostsContainer from "./features/PostsContainer";
 import Creations from "./features/Creations";
 
@@ -28,9 +27,8 @@ function App() {
           </Route>
           <Route path="/">
             <div className={styles.homeContainer}>
-              <Header />
+              <Header theme="light" />
               <Home />
-              <GlobeDelimeter />
             </div>
             <PostsContainer />
           </Route>
