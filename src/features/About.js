@@ -6,25 +6,24 @@ function About() {
   return (
     <div className={styles.container}>
       <Link to="/about" className={styles.headerLink}>
-        <h1 className={styles.title}>About</h1>
-      </Link>
-      <Link to="/about" className={styles.headerLink}>
-        <h3>Rituali degli elementi</h3>
+        <h1 className={styles.title}>Su di me</h1>
       </Link>
       <p>
-        Un rituale è allineare gesto, azione, attenzione e intenzione. Già solo
-        questo crea una armonia, un senso di completezza. Come potrebbe essere
-        danzando, cantando, facendo sport o facendo l&#39;amore. Un rituale con
-        gli elementi è per armonizzare se stessi e come si intende nello
-        sciamanesimo con &quot;tutte le nostre relazioni&quot;. Gli elementi
-        sono gli &quot; Ingredienti &quot; di tutto. Scoprire come ne siamo
-        fatti, come reagiamo, quali forze e intelligenze condividiamo ci aiuta a
-        conoscere e apprezzare meglio. Quale terra sei? Cosa scorre in te come
-        acqua? Cosa ti accende e brucia? Quale respiro ti concedi? Ogni rituale
-        degli elementi può essere fatto come pratica personale o di gruppo, un
-        solo elemento oppure un percorso con tutti.
+        Nato il 1/5/1971 a Roma con il nome Riccardo Benke Calabresi, con
+        origini venezuelane e ungheresi oltre che italiane. Ho avuto centinaia
+        di sogni premonitori, a carattere personale, questo mi ha dato molta
+        spinta e fiducia nel cammino spirituale. Ho frequentato decine di corsi
+        e seminari da yoga kundalini, tai chi, aromaterapia,cristalloterapia,
+        medicina cinese , tibetana e ayurveda, astrologia esoterica e karmica
+        con Sir Douglas Becker, psicosintesi, cerchi di sciamanesimo di varie
+        tradizioni, scuole di buddismo tibetano e giapponese per oltre un
+        decennio, tradizioni wicca tra cui frequento il Tempio di Ara, sto
+        terminando il percorso da druido con Ordine Bardi e Ovati e Druidi (
+        Obod), frequento la tradizione dell&#39;Eish Shaok da 4 anni. Da 6 anni
+        ho aggiunto il nome Nimros per le mie esperienze di sciamanesimo, eseguo
+        letture di Rune, Tarocchi, Animali Totem , astrologia vedica e
+        occidentale, conduco seminari e rituali.
       </p>
-      <button>Solo su prenotazione</button>
       <div className={styles.main}></div>
     </div>
   );

@@ -1,0 +1,7 @@
+.container {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}

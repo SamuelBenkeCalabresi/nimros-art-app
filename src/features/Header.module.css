@@ -36,30 +36,30 @@
   margin: 0;
 }
 
-.link {
+.listLink {
   list-style-type: none;
   font-size: 22px;
 }
 
-.link + .link {
+.listLink + .listLink {
   padding-left: 15px;
 }
 
-a:link {
+.link:link {
   color: #9dcbbb;
   text-decoration: none;
 }
 
-a:visited {
+.link:visited {
   color: #68a691;
   text-decoration: none;
 }
 
-a:hover {
+.link:hover {
   color: #1ea276;
 }
 
-a:active {
+.link:active {
   color: #1ea276;
 }
 

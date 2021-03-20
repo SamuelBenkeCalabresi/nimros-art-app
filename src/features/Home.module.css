@@ -12,10 +12,6 @@
   flex-direction: column;
 }
 
-.profession {
-  border-bottom: 1px solid #68a691;
-}
-
 .description {
   line-height: 1.5;
   font-size: 1.3rem;
@@ -68,4 +64,22 @@
   color: #68a691;
   padding: 10px;
   text-align: center;
+}
+
+.socialIconLink:link {
+  color: #9dcbbb;
+  text-decoration: none;
+}
+
+.socialIconLink:visited {
+  color: #68a691;
+  text-decoration: none;
+}
+
+.socialIconLink:hover {
+  color: #1ea276;
+}
+
+.socialIconLink:active {
+  color: #1ea276;
 }
