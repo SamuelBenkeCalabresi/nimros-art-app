@@ -6,8 +6,9 @@ function Home() {
     <div className={styles.homeContainer}>
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et
-          nunc vel urna facilisis dignissim. Nullam at aliquet nulla
+          Fondatore di Il Canto degli Spiriti, scrittore, druido e sciamano.
+          Contattami, prenota e scopri di più su letture di carte, rituali di
+          passaggio e degli elementi.
         </h1>
       </main>
     </div>

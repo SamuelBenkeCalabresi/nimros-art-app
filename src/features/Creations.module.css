@@ -14,14 +14,17 @@
   line-height: 1.15;
   font-size: 2rem;
 }
+
 .headerLink:link {
   color: white;
-  text-decoration: none;
+  text-decoration: white;
+  text-decoration: underline;
 }
 
 .headerLink:visited {
   color: white;
-  text-decoration: none;
+  text-decoration: white;
+  text-decoration: underline;
 }
 
 .headerLink:hover {
@@ -32,4 +35,68 @@
 .headerLink:active {
   text-decoration: underline;
   text-decoration: white;
+}
+
+.bookButton {
+  font-weight: 500;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: 1px solid white;
+  border-radius: 25px;
+  padding: 12px 45px;
+  margin: 15px 0;
+  cursor: pointer;
+  color: #030e3a;
+}
+
+#button {
+  background: #141f59;
+  border-radius: 25px;
+  height: 40px;
+  width: 150px;
+  border: 2px solid white;
+  margin: 20px 20px 20px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.8em;
+  letter-spacing: 1.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+}
+
+#circle {
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  line-height: 40px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  transition: all 0.5s ease-out;
+  top: 20px;
+  left: 70px;
+}
+
+#button:hover #circle {
+  width: 200%;
+  height: 500%;
+  opacity: 1;
+  top: -70px;
+  left: -70px;
+}
+
+#button:hover > span {
+  color: #030e3a;
+}
+
+#button > span {
+  text-decoration: none;
+  letter-spacing: 1px;
+  position: relative;
+  transition: all 0.45s ease-out;
 }

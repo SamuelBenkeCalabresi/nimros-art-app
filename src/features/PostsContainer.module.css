@@ -1,19 +1,20 @@
 .aside {
-  width: 80%;
   display: flex;
   flex-direction: column;
-  color: #68a691;
+  width: 80%;
   max-width: 1200px;
+  color: white;
   margin: 0 auto;
   padding-top: 35px;
   padding-bottom: 35px;
+  min-height: 60vh;
 }
 
 .postDarkTheme {
   cursor: pointer;
-  border: 1px solid lightblue;
+  border: 1px solid var(--light-yellow);
   border-radius: 20px;
-  box-shadow: 1px 1px 2px 0px lightblue;
+  box-shadow: 1px 1px 2px 0px var(--light-yellow);
   margin-bottom: 30px;
 
   transition: all 0.2s ease-in-out;
@@ -36,13 +37,27 @@
 .postDarkTheme:hover {
   top: -3px;
   left: -3px;
-  box-shadow: 3px 3px 15px 0px lightblue;
+  box-shadow: 3px 3px 15px 0px var(--light-yellow);
 }
 
 .postDarkThemeTitle {
   font-size: 1.3rem;
   font-weight: 600;
   text-align: center;
+  padding: 0 20px;
+  background-color: var(--light-yellow);
+  background-image: linear-gradient(
+    90deg,
+    var(--tapestry),
+    var(--light-yellow),
+    var(--light-white)
+  );
+  background-size: 100%;
+  background-repeat: repeat;
+
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .postDarkThemeText {

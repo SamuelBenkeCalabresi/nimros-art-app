@@ -5,6 +5,7 @@ import Home from "./features/Home";
 import About from "./features/About";
 import Contact from "./features/Contact";
 import Footer from "./features/Footer";
+import ScrollToTop from "./features/ScrollToTop";
 // import Header from "./features/Header";
 import PostsContainer from "./features/PostsContainer";
 import Creations from "./features/Creations";
@@ -24,6 +25,7 @@ import { Link } from "react-router-dom";
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div>
         <Switch>
           <Route path="/about">
@@ -145,12 +147,8 @@ function Header(props) {
         )}
       </div>
       <div className={styles.navbarContainer}>
-        <NavItem to={"/"} icon={<HomeIcon />} openIcon={<HomeOutlinedIcon />} />
-        <NavItem
-          to={"/about"}
-          icon={<AccountCircleIcon />}
-          openIcon={<AccountCircleOutlinedIcon />}
-        />
+        <NavItem to={"/"} icon={<HomeIcon />} />
+        <NavItem to={"/about"} icon={<AccountCircleIcon />} />
         {/* Dropdown */}
         <NavItem icon={<MenuRoundedIcon />} openIcon={<MenuOpenRoundedIcon />}>
           <DropdownMenu />
