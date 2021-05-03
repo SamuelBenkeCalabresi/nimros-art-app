@@ -5,3 +5,29 @@
   width: 80%;
   margin: 0 auto;
 }
+
+.title {
+  margin: 0;
+  margin-top: 10px;
+  line-height: 1.15;
+  font-size: 2rem;
+}
+.headerLink:link {
+  color: white;
+  text-decoration: none;
+}
+
+.headerLink:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.headerLink:hover {
+  text-decoration: underline;
+  text-decoration: white;
+}
+
+.headerLink:active {
+  text-decoration: underline;
+  text-decoration: white;
+}

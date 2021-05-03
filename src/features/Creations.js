@@ -1,14 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Creations.module.css";
+import StripeContainer from "./StripeContainer";
 
 function Creations() {
   return (
     <div className={styles.container}>
-      <Link to="/about" className={styles.headerLink}>
+      <Link to="/creations" className={styles.headerLink}>
         <h1 className={styles.title}>Creazioni</h1>
       </Link>
-      <Link to="/about" className={styles.headerLink}>
+      <Link to="/creations" className={styles.headerLink}>
         <h3>Rituali degli elementi</h3>
       </Link>
       <p>
@@ -25,6 +26,34 @@ function Creations() {
         solo elemento oppure un percorso con tutti.
       </p>
       <button>Solo su prenotazione</button>
+
+      <Link to="/creations" className={styles.headerLink}>
+        <h3>Rituali di passaggio</h3>
+      </Link>
+      <p>
+      Ci sono momenti con una fondamentale valenza fisica: nascita, cambio della dentizione, primo sangue e
+seme, esperienza sessuale, menopausa e andropausa, morte.
+Tutti questi eventi li riconosciamo come riti di passaggio qualsiasi sia il nostro contesto culturale.
+Cambia molto i modi in cui viverli personalmente e nel nostro spazio di relazioni
+Anche il periodo dell’adolescenza, il ruolo e lavoro che scegliamo nella società, i “ lutti&quot; che viviamo alla
+fine di amicizie e relazioni di coppia sono riti di passaggio che in modo più o meno consapevole viviamo
+nell’arco della vita.
+Possiamo facilmente sentire la mancanza di uno o più di questi passaggi.
+Sono molto felice di vedere come esseri umani luminosi si stiano prendendo cura di aiutare questi
+passaggi in diversi ambiti e tradizioni.
+Trovo fondamentale che si possa fare questi riti per il nostro percorso personale e sociale.
+I rituali che propongo hanno delle caratteristiche chiave ma hanno una preparazione particolare per ogni
+singola persona, proprio per evidenziare l’unicità di ognuno.
+Contemporaneamente alle risorse preziose delle sue relazioni.
+Non siamo mai soli nei passi della vita.
+Gli strumenti che metto a disposizione sono quelli della mediazione guidata, il viaggio sciamanico dedicato
+ad animali, piante, Antenati ed Elementi, la divinazione con Tarocchi, Rune,Astrologia e non ultimo la
+guida in cerchi di parola.
+Secondo le affinità che possono essere messe in risalto ad arricchire la bellezza e profondità del rituale che
+si verrà a creare.
+      </p>
+      <button>Solo su prenotazione</button>
+      {/* <StripeContainer /> */}
     </div>
   );
 }

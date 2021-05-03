@@ -19,9 +19,9 @@ function PostsContainer() {
           Lorem ipsum dolor sit amet
         </h3>
         <p className={styles.postDarkThemeText}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et
-          nunc vel urna facilisis dignissim. Nullam at aliquet nulla, id pretium
-          velit. Pellentesque quis sodales lacus, at consectetur sem.
+          {/* - 👋 Hi, I’m @SamuelBenkeCalabresi - 👀 I’m interested in ... - 🌱 I’m
+          currently learning ... - 💞️ I’m looking to collaborate on ... - 📫
+          How to reach me ... */}
         </p>
         <img
           className={styles.postDarkThemeImg}

@@ -14,8 +14,23 @@
   border: 1px solid lightblue;
   border-radius: 20px;
   box-shadow: 1px 1px 2px 0px lightblue;
-  transition: all 0.2s ease-in-out;
   margin-bottom: 30px;
+
+  transition: all 0.2s ease-in-out;
+  animation-name: fadingEffect;
+  animation-duration: 1300ms;
+}
+
+@keyframes fadingEffect {
+  0% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .postDarkTheme:hover {

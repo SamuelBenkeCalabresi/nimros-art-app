@@ -1,22 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap");
-
 .header {
   height: 80px;
-  padding: 30px 0 20px 0;
+  padding: 20px 0 20px 0;
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .title {
-  /* font-family: "Kaushan Script", cursive; */
-  font-family: "Playfair Display", serif;
-  font-weight: 800;
+  font-family: "Kaushan Script", cursive;
+  /* font-family: "Playfair Display", serif; */
+  font-weight: 700;
   margin: 0;
   padding: 0;
-  line-height: 1.15;
-  font-size: 3rem;
+  /* line-height: 1; */
+  font-size: 2rem;
   color: black;
 }
 
@@ -36,6 +33,22 @@
   margin: 0;
 }
 
+.titleContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 15px;
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .listLink {
   list-style-type: none;
   font-size: 22px;
@@ -46,25 +59,31 @@
 }
 
 .link:link {
-  color: #9dcbbb;
+  color: #fff;
   text-decoration: none;
 }
 
 .link:visited {
-  color: #68a691;
+  color: #fff;
   text-decoration: none;
 }
 
 .link:hover {
-  color: #1ea276;
+  color: #fff;
 }
 
 .link:active {
-  color: #1ea276;
+  color: #fff;
 }
 
 @media (min-width: 600px) {
   .title {
-    font-size: 4rem !important;
+    font-size: 2.5rem !important;
   }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
