@@ -24,7 +24,6 @@ function About() {
         letture di Rune, Tarocchi, Animali Totem, astrologia vedica e
         occidentale, conduco seminari e rituali.
       </p>
-      <div className={styles.main}></div>
     </div>
   );
 }

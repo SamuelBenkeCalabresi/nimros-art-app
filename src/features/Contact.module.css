@@ -4,6 +4,8 @@
   flex-direction: column;
   width: 80%;
   margin: 0 auto;
+  justify-items: center;
+  place-items: center;
 }
 
 .title {
@@ -21,6 +23,8 @@
   display: flex;
   flex-direction: column;
   justify-items: center;
+  place-content: center;
+  place-items: center;
 }
 
 .headerLink:link {
@@ -50,6 +54,6 @@
 .socialIconLink {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+  align-items: center;
   margin-bottom: 20px;
 }

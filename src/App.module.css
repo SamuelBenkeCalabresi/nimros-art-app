@@ -66,11 +66,13 @@
 
 .title {
   font-family: "Kaushan Script", cursive;
-  /* font-family: "Playfair Display", serif; */
   font-weight: 700;
-  margin: 0 5vw;
   padding: 0;
-  /* line-height: 1; */
   font-size: 2rem;
   color: #fff;
+}
+
+.navbarContainer {
+  display: flex;
+  justify-content: flex-end;
 }

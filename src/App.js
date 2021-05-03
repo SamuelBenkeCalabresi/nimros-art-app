@@ -135,21 +135,27 @@ function Header(props) {
     <Navbar>
       <div className={styles.titleContainer}>
         {props.theme === "light" ? (
-          <h1 className={`${styles.title} ${styles.light}`}>Nimros.art</h1>
+          <Link to="/">
+            <h1 className={`${styles.title} ${styles.light}`}>Nimros.art</h1>
+          </Link>
         ) : (
-          <h1 className={styles.title}>Nimros.art</h1>
+          <Link to="/">
+            <h1 className={styles.title}>Nimros.art</h1>
+          </Link>
         )}
       </div>
-      <NavItem to={"/"} icon={<HomeIcon />} openIcon={<HomeOutlinedIcon />} />
-      <NavItem
-        to={"/about"}
-        icon={<AccountCircleIcon />}
-        openIcon={<AccountCircleOutlinedIcon />}
-      />
-      {/* Dropdown */}
-      <NavItem icon={<MenuRoundedIcon />} openIcon={<MenuOpenRoundedIcon />}>
-        <DropdownMenu />
-      </NavItem>
+      <div className={styles.navbarContainer}>
+        <NavItem to={"/"} icon={<HomeIcon />} openIcon={<HomeOutlinedIcon />} />
+        <NavItem
+          to={"/about"}
+          icon={<AccountCircleIcon />}
+          openIcon={<AccountCircleOutlinedIcon />}
+        />
+        {/* Dropdown */}
+        <NavItem icon={<MenuRoundedIcon />} openIcon={<MenuOpenRoundedIcon />}>
+          <DropdownMenu />
+        </NavItem>
+      </div>
     </Navbar>
   );
 }

@@ -4,6 +4,8 @@
   flex-direction: column;
   width: 80%;
   margin: 0 auto;
+  justify-items: center;
+  place-items: center;
 }
 
 .title {
