@@ -6,6 +6,7 @@ import About from "./features/About";
 import Contact from "./features/Contact";
 import Footer from "./features/Footer";
 import ScrollToTop from "./features/ScrollToTop";
+import Bookings from "./features/Bookings";
 // import Header from "./features/Header";
 import PostsContainer from "./features/PostsContainer";
 import Creations from "./features/Creations";
@@ -42,6 +43,10 @@ function App() {
           <Route path="/creations">
             <Header />
             <Creations />
+          </Route>
+          <Route path="/bookings">
+            <Header />
+            <Bookings />
           </Route>
           <Route path="/">
             <div className={styles.homeContainer}>
@@ -168,6 +173,11 @@ function Navbar(props) {
 
 function NavItem(props) {
   const [open, setOpen] = useState(false);
+  const iconToDisplay = !open
+    ? props.icon
+    : !props.openIcon
+    ? props.icon
+    : props.openIcon;
 
   return (
     <li className="nav-item">
@@ -176,7 +186,7 @@ function NavItem(props) {
         className="icon-button"
         onClick={() => setOpen(!open)}
       >
-        {!open ? props.icon : props.openIcon}
+        {iconToDisplay}
       </Link>
       {/* if clicked the icon then we want to show the dropdown */}
       {open && props.children}

@@ -57,3 +57,8 @@
   align-items: center;
   margin-bottom: 20px;
 }
+
+.contactText {
+  text-align: center;
+  width: clamp(80%, 60vw, 60%);
+}

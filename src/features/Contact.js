@@ -12,13 +12,11 @@ function Contact() {
       <Link to="/contact" className={styles.headerLink}>
         <h1 className={styles.title}>Contatti</h1>
       </Link>
-      <div className={styles.contactDescription}>
-        <p className={styles.contactText}>
-          Ciao! Sono sempre felice di sentire proposte interessanti e
-          collaborazioni. Sentiti libero di contattarmi tramite e-mail o social
-          media.
-        </p>
-      </div>
+      <p className={styles.contactText}>
+        Ciao! Sono sempre felice di sentire proposte interessanti e
+        collaborazioni. Sentiti libero di contattarmi tramite e-mail o social
+        media.
+      </p>
       <div className={styles.contactsContainer}>
         <a
           href="https://www.facebook.com/druidnim/"
