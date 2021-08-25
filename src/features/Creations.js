@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Creations.module.css";
-import StripeContainer from "./StripeContainer";
+import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 
 function Creations() {
   return (
@@ -26,7 +26,6 @@ function Creations() {
         </p>
         <button className="glow-on-hover">Prenota</button>
       </div>
-
       <div className={styles.creation}>
         <h3>Rituali di passaggio</h3>
         <p className={styles.paragraph}>
@@ -57,9 +56,93 @@ function Creations() {
         <button className="glow-on-hover">Prenota</button>
       </div>
 
-      {/* <StripeContainer /> */}
+      <PayPalScriptProvider
+        options={{
+          "client-id":
+            "ASIBbvvUc7zNUjBYMrmU07bf68RN1bWR2R-LoTigexQg7g8teOoywXL8k9ykbVwWuaozlv4cKu-1genp",
+        }}
+      >
+        <PayPalButtons
+          style={{}}
+          createOrder={(data, actions) => {
+            return actions.order.create({
+              purchase_units: [
+                {
+                  amount: {
+                    value: "1.00",
+                  },
+                },
+              ],
+            });
+          }}
+        />
+      </PayPalScriptProvider>
     </div>
   );
 }
 
+// const PayPalPayment = () => {
+//   const [currency, setCurrency] = useState("USD");
+
+//   function CurrencySelect() {
+//       const [{ options }, dispatch] = usePayPalScriptReducer();
+
+//       function onCurrencyChange(event: ChangeEvent<HTMLSelectElement>) {
+//           setCurrency(event.target.value);
+//           dispatch({
+//               type: DISPATCH_ACTION.RESET_OPTIONS,
+//               value: {
+//                   ...options,
+//                   currency: event.target.value,
+//               },
+//           });
+//       }
+
+//       return (
+//           <select
+//               value={currency}
+//               onChange={onCurrencyChange}
+//               name="currency"
+//               id="currency"
+//               style={{ marginBottom: "20px" }}
+//           >
+//               <option value="USD">United States dollar</option>
+//               <option value="EUR">Euro</option>
+//               <option value="CAD">Canadian dollar</option>
+//           </select>
+//       );
+//   }
+
+//   function createOrder(
+//       data: Record<string, unknown>,
+//       actions: CreateOrderActions
+//   ) {
+//       return actions.order.create({
+//           purchase_units: [
+//               {
+//                   amount: {
+//                       value: "88.44",
+//                       currency_code: currency,
+//                   },
+//               },
+//           ],
+//       });
+//   }
+
+//   return (
+//       <div style={{ minHeight: "300px" }}>
+//           <PayPalScriptProvider
+//               options={{
+//                   ...scriptProviderOptions,
+//                   "data-namespace": "currency_example",
+//               }}
+//           >
+//               <CurrencySelect />
+//               <PayPalButtons createOrder={createOrder} />
+//           </PayPalScriptProvider>
+//       </div>
+//   );
+// }
+// client id: ASIBbvvUc7zNUjBYMrmU07bf68RN1bWR2R-LoTigexQg7g8teOoywXL8k9ykbVwWuaozlv4cKu-1genp
+// client secret: EE89eNTUmWGtoxnvRGf0PXHCxVW8g5BtU3TifFYG1NKYZtgIK5Bv1C9gDw7D-DV6TfTCMdmmPWOJBfTs
 export default Creations;
