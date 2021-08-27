@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;500;700&display=swap");
 
 body,
 html {
@@ -10,13 +11,14 @@ html {
     "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #030e3a;
+  background-color: var(--bg-opac);
   color: var(--light-white);
 }
 
 :root {
   --dark-blue-zodiac: #181123;
-  --blue-zodiac: #141f59;
+  --blue-zodiac-2: #0b124d;
+  --blue-zodiac-1: #141f59;
   --dark-blue: #0e163f;
   --tapestry: #b868aa;
   --butterly-blush: #734fa0;
@@ -49,11 +51,11 @@ a {
   position: sticky;
   top: 0;
   height: var(--nav-size);
-  background-color: var(--bg-opac);
+  background-color: var(--blue-zodiac-2);
   padding: 0 1rem;
   border-bottom: var(--border);
   margin-bottom: 20px;
-  z-index: 100;
+  z-index: 99999 !important;
 }
 
 /* <ul> */
@@ -159,18 +161,64 @@ a {
   transition: all var(--speed) ease;
 }
 
+.container-default {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  justify-items: center;
+  place-items: center;
+}
+
 .img {
   width: 100%;
   height: 200vh;
 }
 
-.glow-on-hover {
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  max-height: 500px;
+}
+
+.paragraph-default {
+  width: 80%;
+  line-height: 1.5rem;
+}
+
+.header-1-default {
+  font-family: "Kaisei HarunoUmi", serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.15;
+  background-color: red;
+  background-image: linear-gradient(
+    90deg,
+    var(--tapestry),
+    var(--light-yellow),
+    var(--light-white)
+  );
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.header-2-default {
+  font-family: "Kaisei HarunoUmi", serif;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.button-default {
   font-size: 1rem;
   padding: 12px 60px;
-  border: none;
   outline: none;
+  border: none;
   color: #fff;
-  background: #141f59;
+  background-color: #141f59;
   cursor: pointer;
   position: relative;
   z-index: 0;
@@ -178,68 +226,44 @@ a {
   text-transform: uppercase;
 }
 
-.glow-on-hover:before {
-  content: "";
+.button-default:hover {
+  filter: brightness(1.2);
+}
+
+.button-default:active {
+  filter: brightness(0.8);
+}
+
+.button-default:focus {
+  filter: brightness(0.8);
+}
+
+.header-link-default:link {
+  text-decoration: none;
+}
+
+.title {
+  margin-top: 7rem;
+  line-height: 1;
+  font-family: "Roboto", sans-serif;
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: 900;
+  color: #ffffff;
+  text-align: center;
+
+  background-color: red;
   background-image: linear-gradient(
-    45deg,
-    #7a00ff,
+    90deg,
     var(--tapestry),
-    #002bff,
-    var(--blue-zodiac),
     var(--light-yellow),
-    var(--light-white),
-    var(--tapestry)
+    var(--light-white)
   );
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing 20s linear infinite;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 10px;
-}
 
-.glow-on-hover:active {
-  color: #141f59;
-}
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
 
-.glow-on-hover:focus {
-  border-radius: 10px;
-}
-
-.glow-on-hover:active:after {
-  background: transparent;
-}
-
-.glow-on-hover:hover:before {
-  opacity: 1;
-}
-
-.glow-on-hover:after {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #141f59;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
-}
-
-@keyframes glowing {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }

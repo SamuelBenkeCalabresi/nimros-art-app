@@ -8,13 +8,6 @@
   place-items: center;
 }
 
-.title {
-  margin: 0;
-  margin-top: 10px;
-  line-height: 1.15;
-  font-size: 2rem;
-}
-
 .summary {
   width: 60%;
 }
@@ -23,28 +16,7 @@
   display: flex;
   flex-direction: column;
   justify-items: center;
-  place-content: center;
   place-items: center;
-}
-
-.headerLink:link {
-  color: white;
-  text-decoration: underline;
-}
-
-.headerLink:visited {
-  color: white;
-  text-decoration: underline;
-}
-
-.headerLink:hover {
-  text-decoration: underline;
-  text-decoration: white;
-}
-
-.headerLink:active {
-  text-decoration: underline;
-  text-decoration: white;
 }
 
 .socialTextLink {
@@ -56,9 +28,20 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
+  transition: filter 300ms;
+  transition: all var(--speed) ease;
+}
+
+.socialIconLink:hover {
+  filter: brightness(1.2);
 }
 
 .contactText {
   text-align: center;
   width: clamp(80%, 60vw, 60%);
+}
+
+.patreonIcon {
+  height: 30px;
+  padding: 3px;
 }

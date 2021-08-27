@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import styles from "./Contact.module.css";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import { ReactComponent as PatreonIcon } from "../assets/images/patreon-logo.svg";
 import MailIcon from "@material-ui/icons/Mail";
 
 function Contact() {
   return (
     <div className={styles.container}>
-      <Link to="/contact" className={styles.headerLink}>
-        <h1 className={styles.title}>Contatti</h1>
+      <Link to="/contact" className="header-link-default">
+        <h1 className="header-1-default">Contatti</h1>
       </Link>
       <p className={styles.contactText}>
         Ciao! Sono sempre felice di sentire proposte interessanti e
@@ -42,8 +42,8 @@ function Contact() {
           rel="noopener noreferrer"
           className={styles.socialIconLink}
         >
-          <LinkedInIcon fontSize="large" />
-          <p className={styles.socialTextLink}>Linkedin</p>
+          <PatreonIcon className={styles.patreonIcon} />
+          <p className={styles.socialTextLink}>Patreon</p>
         </a>
         <a
           href="mailto:nimros.sondar@gmail.com?subject=Mail from Nimros.art"

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function PostsContainer() {
   return (
     <aside className={styles.aside}>
-      <Link to="/creations" className={styles.postDarkTheme}>
+      <Link to="/bookings" className={styles.postDarkTheme}>
         <h3 className={styles.postDarkThemeTitle}>
           Prenota online lezioni su sciamanesimo e druidismo
         </h3>

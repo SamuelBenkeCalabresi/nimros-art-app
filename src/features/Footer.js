@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Footer.module.css";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import { ReactComponent as PatreonIcon } from "../assets/images/patreon-logo.svg";
 import MailIcon from "@material-ui/icons/Mail";
 
 function Footer() {
@@ -32,7 +32,7 @@ function Footer() {
             rel="noopener noreferrer"
             className={styles.iconButton}
           >
-            <LinkedInIcon />
+            <PatreonIcon className={styles.patreonIcon} />
           </a>
           <a
             href="mailto:nimros.sondar@gmail.com?subject=Mail from Nimros.art"
